@@ -132,19 +132,43 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
-    <style name="Classic.Dark.BottomSheet" parent="Theme.Session.BottomSheet">
-        <item name="colorPrimary">@color/classic_dark_0</item>
-        <item name="dialog_border">@color/transparent_black_15</item>
-        <item name="android:textColorPrimary">@color/classic_dark_6</item>
-        <item name="android:textColorSecondary">?android:textColorPrimary</item>
-        <item name="android:textColorTertiary">@color/classic_dark_5</item>
-    </style>
-    <style name="Classic.Light.BottomSheet" parent="Theme.Session.BottomSheet">
-        <item name="colorPrimary">@color/classic_light_5</item>
-        <item name="dialog_border">@color/transparent_black_15</item>
-        <item name="android:textColorPrimary">@color/classic_light_0</item>
-        <item name="android:textColorSecondary">?android:textColorPrimary</item>
-        <item name="android:textColorTertiary">@color/classic_light_1</item>
+         <style name="Classic.Dark">
+        <!-- Header / Toolbar Color (Dark Teal/Gray) -->
+        <item name="colorPrimary">#202C33</item>
+        <item name="colorPrimaryDark">#111B21</item>
+        <item name="backgroundSecondary">#202C33</item>
+
+        <!-- Main Window & Chat Screen Background (Dark WhatsApp Background) -->
+        <item name="android:windowBackground">#0B141A</item>
+        <item name="colorCellBackground">#111B21</item>
+
+        <!-- Conversation Bubbles -->
+        <item name="message_sent_background_color">#005C4B</item>
+        <item name="message_sent_text_color">#FFFFFF</item>
+        <item name="message_received_background_color">#202C33</item>
+        <item name="message_received_text_color">#FFFFFF</item>
+    
+   </style>
+        <style name="Classic.Light">
+        <!-- Header / Toolbar Color (WhatsApp Dark Teal) -->
+        <item name="colorPrimary">#075E54</item>
+        <item name="colorPrimaryDark">#054C44</item>
+        <item name="backgroundSecondary">#075E54</item>
+
+        <!-- Main Window & Chat Screen Background (WhatsApp Beige) -->
+        <item name="android:windowBackground">#ECE5DD</item>
+        <item name="colorCellBackground">#FFFFFF</item>
+
+        <!-- Accent Colors (WhatsApp Light Green) -->
+        <item name="colorControlActivated">#25D366</item>
+        <item name="colorAccent">#25D366</item>
+
+        <!-- Conversation Bubbles -->
+        <item name="message_sent_background_color">#DCF8C6</item>
+        <item name="message_sent_text_color">#000000</item>
+        <item name="message_received_background_color">#FFFFFF</item>
+        <item name="message_received_text_color">#000000</item>
+   
     </style>
     <style name="Ocean.Dark.BottomSheet" parent="Theme.Session.BottomSheet">
         <item name="colorPrimary">@color/ocean_dark_3</item>
