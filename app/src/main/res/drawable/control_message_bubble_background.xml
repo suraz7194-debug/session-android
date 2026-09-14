@@ -4,7 +4,8 @@
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/message_corner_radius"/>
-            <solid android:color="?backgroundSecondary" />
+            <solid android:color="#DCF8C6" />
+
         </shape>
     </item>
 </layer-list>
