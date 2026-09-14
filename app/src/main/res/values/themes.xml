@@ -31,7 +31,7 @@
        <item name="colorSurface">?backgroundSecondary</item>
        <item name="menu_trash_icon">@drawable/ic_trash_2</item>
        <item name="menu_ban_icon">@drawable/ic_ban</item>
-       <item name="menu_save_icon">@drawable/ic_arrow_down_to_line</item>=
+       <item name="menu_save_icon">@drawable/ic_arrow_down_to_line</item>
        <item name="menu_copy_icon">@drawable/ic_copy</item>
        <item name="menu_reply_icon">@drawable/ic_reply</item>
        <item name="menu_select_icon">@drawable/ic_circle_check</item>
@@ -60,12 +60,6 @@
         <item name="actionBarStyle">@style/Widget.Session.ActionBar.Flat</item>
     </style>
 
-    <!--
-    This is a temporary theme that is used by any activity
-    which doesn't have support for light theme
-    (like some old Signal screens or third-party libs with white only icons)
-    -->
-    <!-- TODO: Refactor this to use color resources -->
     <style name="Base.Theme.Session.ForceDark" parent="Theme.Session.DayNight">
         <item name="colorPrimary">#171717</item>
         <item name="colorAccent">@color/accent_green</item>
@@ -81,6 +75,7 @@
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
         <item name="actionBarStyle">@style/Widget.AppCompat.ActionBar</item>
     </style>
+
     <style name="Theme.Session.ForceDark" parent="Base.Theme.Session.ForceDark">
         <!-- leave empty to allow overriding -->
     </style>
@@ -92,15 +87,10 @@
     </style>
 
     <style name="Base.Theme.TextSecure" parent="@style/Theme.Session.DayNight">
-
         <item name="windowActionModeOverlay">true</item>
-
         <item name="conversation_list_item_subject_color">#ffdddddd</item>
-
         <item name="fab_color">?colorAccent</item>
-
         <item name="emoji_text_color">@color/white</item>
-
         <item name="emoji_category_recent">@drawable/ic_recent_dark_20</item>
         <item name="emoji_category_people">@drawable/ic_emoji_people_dark_20</item>
         <item name="emoji_category_nature">@drawable/ic_emoji_animal_dark_20</item>
@@ -111,9 +101,7 @@
         <item name="emoji_category_symbol">@drawable/ic_emoji_symbol_dark_20</item>
         <item name="emoji_category_flags">@drawable/ic_emoji_flag_dark_20</item>
         <item name="emoji_category_emoticons">@drawable/ic_emoji_emoticon_dark_20</item>
-
         <item name="sticker_view_missing_background">@drawable/sticker_missing_background_dark</item>
-
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.Fix</item>
     </style>
 
@@ -132,44 +120,6 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
-         <style name="Classic.Dark">
-        <!-- Header / Toolbar Color (Dark Teal/Gray) -->
-        <item name="colorPrimary">#202C33</item>
-        <item name="colorPrimaryDark">#111B21</item>
-        <item name="backgroundSecondary">#202C33</item>
-
-        <!-- Main Window & Chat Screen Background (Dark WhatsApp Background) -->
-        <item name="android:windowBackground">#0B141A</item>
-        <item name="colorCellBackground">#111B21</item>
-
-        <!-- Conversation Bubbles -->
-        <item name="message_sent_background_color">#005C4B</item>
-        <item name="message_sent_text_color">#FFFFFF</item>
-        <item name="message_received_background_color">#202C33</item>
-        <item name="message_received_text_color">#FFFFFF</item>
-    
-   </style>
-        <style name="Classic.Light">
-        <!-- Header / Toolbar Color (WhatsApp Dark Teal) -->
-        <item name="colorPrimary">#075E54</item>
-        <item name="colorPrimaryDark">#054C44</item>
-        <item name="backgroundSecondary">#075E54</item>
-
-        <!-- Main Window & Chat Screen Background (WhatsApp Beige) -->
-        <item name="android:windowBackground">#ECE5DD</item>
-        <item name="colorCellBackground">#FFFFFF</item>
-
-        <!-- Accent Colors (WhatsApp Light Green) -->
-        <item name="colorControlActivated">#25D366</item>
-        <item name="colorAccent">#25D366</item>
-
-        <!-- Conversation Bubbles -->
-        <item name="message_sent_background_color">#DCF8C6</item>
-        <item name="message_sent_text_color">#000000</item>
-        <item name="message_received_background_color">#FFFFFF</item>
-        <item name="message_received_text_color">#000000</item>
-   
-    </style>
     <style name="Ocean.Dark.BottomSheet" parent="Theme.Session.BottomSheet">
         <item name="colorPrimary">@color/ocean_dark_3</item>
         <item name="dialog_border">@color/transparent_black_15</item>
@@ -177,6 +127,7 @@
         <item name="android:textColorSecondary">?android:textColorPrimary</item>
         <item name="android:textColorTertiary">@color/ocean_dark_5</item>
     </style>
+
     <style name="Ocean.Light.BottomSheet" parent="Theme.Session.BottomSheet">
         <item name="colorPrimary">@color/ocean_light_6</item>
         <item name="dialog_border">@color/transparent_black_15</item>
@@ -218,9 +169,9 @@
     <style name="Classic.Dark">
         <!-- Main styles -->
         <item name="sessionLogoTint">@color/classic_dark_6</item>
-        <item name="colorPrimary">@color/classic_dark_0</item>
-        <item name="colorPrimaryDark">@color/classic_dark_0</item>
-        <item name="backgroundSecondary">@color/classic_dark_1</item>
+        <item name="colorPrimary">#202C33</item>
+        <item name="colorPrimaryDark">#111B21</item>
+        <item name="backgroundSecondary">#202C33</item>
         <item name="colorControlNormal">?android:textColorPrimary</item>
         <item name="colorControlActivated">?colorAccent</item>
         <item name="warning">@color/accent_orange</item>
@@ -233,11 +184,11 @@
         <item name="android:textColorHint">@color/gray27</item>
         <item name="textColorAlert">@color/classic_dark_6</item>
         <item name="accentText">?colorAccent</item>
-        <item name="android:windowBackground">?colorPrimary</item>
+        <item name="android:windowBackground">#0B141A</item>
         <item name="bottomSheetDialogTheme">@style/Classic.Dark.BottomSheet</item>
         <item name="actionMenuTextColor">?android:textColorPrimary</item>
         <item name="popupTheme">?actionBarPopupTheme</item>
-        <item name="colorCellBackground">@color/classic_dark_1</item>
+        <item name="colorCellBackground">#111B21</item>
         <item name="colorDividerBackground">@color/classic_dark_3</item>
         <item name="android:colorControlHighlight">@color/classic_dark_3</item>
         <item name="colorControlHighlight">@color/classic_dark_3</item>
@@ -276,10 +227,10 @@
         <item name="conversationMenuSearchBackgroundColor">@color/classic_dark_0</item>
 
         <!-- Conversation -->
-        <item name="message_received_background_color">@color/classic_dark_2</item>
-        <item name="message_received_text_color">@color/classic_dark_6</item>
-        <item name="message_sent_background_color">?colorAccent</item>
-        <item name="message_sent_text_color">@color/classic_dark_0</item>
+        <item name="message_received_background_color">#202C33</item>
+        <item name="message_received_text_color">#FFFFFF</item>
+        <item name="message_sent_background_color">#005C4B</item>
+        <item name="message_sent_text_color">#FFFFFF</item>
         <item name="message_status_color">@color/classic_dark_5</item>
         <item name="input_bar_text_hint">@color/classic_dark_5</item>
         <item name="input_bar_text_user">@color/classic_dark_6</item>
@@ -298,11 +249,11 @@
     <style name="Classic.Light">
         <!-- Main styles -->
         <item name="sessionLogoTint">@color/classic_light_0</item>
-        <item name="colorPrimary">@color/classic_light_6</item>
-        <item name="backgroundSecondary">@color/classic_light_5</item>
-        <item name="colorPrimaryDark">@color/classic_light_6</item>
+        <item name="colorPrimary">#075E54</item>
+        <item name="backgroundSecondary">#075E54</item>
+        <item name="colorPrimaryDark">#054C44</item>
         <item name="colorControlNormal">?android:textColorPrimary</item>
-        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlActivated">#25D366</item>
         <item name="warning">@color/rust</item>
         <item name="danger">@color/danger_light</item>
         <item name="disabled">@color/classic_dark_5</item>
@@ -313,8 +264,8 @@
         <item name="android:textColorHint">@color/gray27</item>
         <item name="textColorAlert">@color/classic_light_0</item>
         <item name="accentText">?android:textColorPrimary</item>
-        <item name="android:windowBackground">?colorPrimary</item>
-        <item name="colorCellBackground">@color/classic_light_6</item>
+        <item name="android:windowBackground">#ECE5DD</item>
+        <item name="colorCellBackground">#FFFFFF</item>
         <item name="colorDividerBackground">@color/classic_light_3</item>
         <item name="android:colorControlHighlight">@color/classic_light_3</item>
         <item name="colorControlHighlight">@color/classic_light_3</item>
@@ -325,7 +276,8 @@
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.ActionBar</item>
         <item name="actionBarStyle">@style/Widget.Session.ActionBar.Flat</item>
-        <item name="accentColor">?colorAccent</item>
+        <item name="accentColor">#25D366</item>
+        <item name="colorAccent">#25D366</item>
         <item name="onInvertedBackgroundPrimary">?colorAccent</item>
         <item name="prominentButtonColor">?android:textColorPrimary</item>
         <item name="elementBorderColor">@color/classic_light_3</item>
@@ -361,10 +313,10 @@
         <item name="conversationMenuSearchBackgroundColor">@color/classic_light_6</item>
 
         <!-- Conversation -->
-        <item name="message_received_background_color">@color/classic_light_4</item>
-        <item name="message_received_text_color">@color/classic_light_0</item>
-        <item name="message_sent_background_color">?colorAccent</item>
-        <item name="message_sent_text_color">@color/classic_light_0</item>
+        <item name="message_received_background_color">#FFFFFF</item>
+        <item name="message_received_text_color">#000000</item>
+        <item name="message_sent_background_color">#DCF8C6</item>
+        <item name="message_sent_text_color">#000000</item>
         <item name="message_status_color">@color/classic_light_1</item>
         <item name="input_bar_text_hint">@color/classic_light_1</item>
         <item name="input_bar_text_user">@color/classic_light_0</item>
@@ -378,7 +330,6 @@
         <item name="scroll_to_bottom_button_background">@color/classic_light_4</item>
         <item name="scroll_to_bottom_button_border">@color/classic_light_2</item>
         <item name="message_selected">@color/classic_light_3</item>
-
     </style>
 
     <style name="Ocean.Dark">
