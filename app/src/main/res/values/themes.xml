@@ -45,7 +45,7 @@
        <item name="android:actionMenuTextAppearance">@style/MenuTextAppearance</item>
    </style>
 
-    <!-- This should be the default theme for the application. -->
+    <!-- Default app themes -->
     <style name="Theme.Session.DayNight" parent="Base.Theme.Session">
         <!-- leave empty to allow overriding -->
     </style>
@@ -118,6 +118,23 @@
     <style name="Theme.TextSecure.Dialog.MediaSendProgress" parent="@android:style/Theme.Dialog">
         <item name="android:colorBackground">?backgroundSecondary</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Bottom Sheet Definitions -->
+    <style name="Classic.Dark.BottomSheet" parent="Theme.Session.BottomSheet">
+        <item name="colorPrimary">#202C33</item>
+        <item name="dialog_border">@color/transparent_black_15</item>
+        <item name="android:textColorPrimary">@color/classic_dark_6</item>
+        <item name="android:textColorSecondary">?android:textColorPrimary</item>
+        <item name="android:textColorTertiary">@color/classic_dark_5</item>
+    </style>
+
+    <style name="Classic.Light.BottomSheet" parent="Theme.Session.BottomSheet">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="dialog_border">@color/transparent_black_15</item>
+        <item name="android:textColorPrimary">@color/classic_light_0</item>
+        <item name="android:textColorSecondary">?android:textColorPrimary</item>
+        <item name="android:textColorTertiary">@color/classic_light_1</item>
     </style>
 
     <style name="Ocean.Dark.BottomSheet" parent="Theme.Session.BottomSheet">
@@ -458,7 +475,6 @@
         <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
         <item name="isLightTheme">true</item>
         <item name="android:isLightTheme" tools:targetApi="Q">true</item>
-
 
         <item name="searchBackgroundColor">@color/ocean_light_5</item>
         <item name="searchIconColor">@color/ocean_light_1</item>
